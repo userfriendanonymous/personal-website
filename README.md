@@ -1,2 +1,2 @@
 # personal-website
-Personal website frontend
+Personal website frontend (userfriend.vercel.app)
