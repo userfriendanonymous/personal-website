@@ -1,7 +1,7 @@
 import GlobalState from "../core/globalState"
 import {useState, useEffect} from 'react'
 
-export default function useGlobalState<StateType>(state: GlobalState<StateType>){
+export default function useGlobalState<StateType>(state: GlobalState<StateType>): [StateType, (value: StateType) => void] {
     const [, rerender] = useState()
 
     useEffect(() => {
